@@ -1,5 +1,5 @@
 package bcccp.test;
 
-public class AdhocTicket_Test {
+public class AdhocTicket_TestClass {
 
 }
