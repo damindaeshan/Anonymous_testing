@@ -9,16 +9,10 @@ public class SeasonTicket_Test {
 		UsageRecord record = new UsageRecord("TIK001",  1220227200);
 		ticket.recordUsage(record);
 		
-		UsageRecord record1 = new UsageRecord("TIK002",  1220227200);
-		ticket.recordUsage(record1);
-		
-		UsageRecord record2 = new UsageRecord("TIK003",  1220227200);
-		ticket.recordUsage(record2);
-		
-		System.out.println(ticket.getUsageRecords());
-		//[Usage : startDateTime : 1220227200, endDateTime: 0, 
-		//Usage : startDateTime : 1220227200, endDateTime: 0,
-		//Usage : startDateTime : 1220227200, endDateTime: 0]
+		System.out.println(ticket.toString());
+		//Carpark    : LEFD-001
+		//Ticket No  : TIK001
+		//Usage : startDateTime : 1220227200, endDateTime: 0
 
 	}
 	
