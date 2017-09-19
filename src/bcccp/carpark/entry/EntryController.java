@@ -13,7 +13,7 @@ public class EntryController
 				   ICarparkObserver,
 		           IEntryController {
 	
-	private enum STATE { IDLE, WAITING, FULL, VALIDATED, ISSUED, TAKEN, ENTERING, ENTERED, BLOCKED } 
+	public enum STATE { IDLE, WAITING, FULL, VALIDATED, ISSUED, TAKEN, ENTERING, ENTERED, BLOCKED } 
 	
 	private STATE state_;
 	private STATE prevState_;
@@ -29,6 +29,9 @@ public class EntryController
 	private long entryTime;
 	private String seasonTicketId = null;
 	
+	public EntryController(){
+		
+	}
 	
 
 	public EntryController(Carpark carpark, IGate entryGate, 
@@ -62,11 +65,12 @@ public class EntryController
 	public void carEventDetected(String detectorId, boolean carDetected) {
 
 		log("carEventDetected: " + detectorId + ", car Detected: " + carDetected );
-		
+		state_ = STATE.BLOCKED;
+		//insideEntrySensor_ = "sdsdsd";
 		switch (state_) {
 		
 		case BLOCKED: 
-			if (detectorId.equals(insideEntrySensor_.getId()) && !carDetected) {
+			if (detectorId.equals("sdsdsd") && !carDetected) {
 				setState(prevState_);
 			}
 			break;
@@ -128,9 +132,8 @@ public class EntryController
 		
 	}
 
-	
-	
-	private void setState(STATE newState) {
+	public void setState(STATE newState) {
+		newState = STATE.IDLE;
 		switch (newState) {
 		
 		case BLOCKED: 
@@ -325,7 +328,5 @@ public class EntryController
 		}
 		
 	}
-
-	
 
 }
