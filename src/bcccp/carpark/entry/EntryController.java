@@ -65,12 +65,12 @@ public class EntryController
 	public void carEventDetected(String detectorId, boolean carDetected) {
 
 		log("carEventDetected: " + detectorId + ", car Detected: " + carDetected );
-		state_ = STATE.BLOCKED;
+		//state_ = STATE.BLOCKED;
 		//insideEntrySensor_ = "sdsdsd";
 		switch (state_) {
 		
 		case BLOCKED: 
-			if (detectorId.equals("CAR1") && !carDetected) {
+			if (detectorId.equals(outsideEntrySensor_.getId()) && !carDetected) {
 				setState(prevState_);
 			}
 			break;
@@ -141,7 +141,7 @@ public class EntryController
 		//newState = STATE.ISSUED;
 		//newState = STATE.TAKEN;
 		//newState = STATE.ENTERING;
-		newState = STATE.ENTERED;
+		//newState = STATE.ENTERED;
 		switch (newState) {
 		
 		case BLOCKED: 
