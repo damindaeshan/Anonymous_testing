@@ -25,10 +25,8 @@ public class EntryControllerTest {
 		CarSensor os = new CarSensor("CAR1", 1, 2);
 		EntryUI ui = new EntryUI(1, 2);
 		EntryController controller = new EntryController(carpark, entryGate, os, is, ui);
-		controller.carEventDetected("CAR1", true);
-		//EntryController entryController = new EntryController();
-		//entryController.carEventDetected("CAR1", true);
-		//entryController.setState(null);
+		//controller.carEventDetected("CAR1", true);
+		controller.buttonPushed();
 	}
 	
 	

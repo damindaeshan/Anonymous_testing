@@ -49,9 +49,10 @@ public class EntryController
 		insideEntrySensor_.registerResponder(this);
 		ui.registerController(this);
 		
-		//setState(STATE.ISSUED);
+		setState(STATE.IDLE);
 		//setState(STATE.ENTERED);
-		setState(STATE.ENTERING);
+		//setState(STATE.ENTERING);
+		//setState(STATE.WAITING);
 		
 	}
 
@@ -259,6 +260,7 @@ public class EntryController
 	
 	@Override
 	public void buttonPushed() {
+		state_ = STATE.WAITING;
 		if (state_ == STATE.WAITING) {
 			if (!carpark.isFull()) {
 				adhocTicket = carpark.issueAdhocTicket();
@@ -268,7 +270,7 @@ public class EntryController
 				entryTime = System.currentTimeMillis();
 				//entryTime = adhocTicket.getEntryDateTime();
 				String barcode = adhocTicket.getBarcode();
-				
+				System.out.println("EntryTime" + entryTime + "   Barcode" + barcode);
 				ui.printTicket(carparkId, ticketNo, entryTime, barcode);
 				setState(STATE.ISSUED);
 			}
