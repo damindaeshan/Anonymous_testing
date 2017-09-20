@@ -13,7 +13,8 @@ public class SeasonTicketDAO_Test {
 		
 		SeasonTicketDAO SeaDAO = new SeasonTicketDAO(factory);
 		SeasonTicket ticket = new SeasonTicket("TIK001", "CAR_001", 12343344, 1234565);
+		SeaDAO.registerTicket(ticket);
 		SeaDAO.recordTicketEntry("TIK001"); 
-		//recordTicketUsage : no such ticket: TIK001
+		//Ticket Registered
 	}
 }
