@@ -21,14 +21,14 @@ public class ExitControllerTest {
 		Carpark carpark = new Carpark("Gulani_CAR", 15, adhocTicketDAO, seasonTicketDAO);
 		Gate entryGate = new Gate(1, 2);
 		Gate exitGate = new Gate(2, 3);
-		CarSensor is = new CarSensor("CAR1", 1, 2);
-		CarSensor os = new CarSensor("CAR1", 2, 3);
+		CarSensor is = new CarSensor("Exit Car 2", 1, 2);
+		CarSensor os = new CarSensor("Exit Car 2", 2, 3);
 		EntryUI ui = new EntryUI(1, 2);
 		ExitUI exitUI = new ExitUI(2, 3);
 
 		ExitController exitController = new ExitController(carpark, exitGate, is, os, exitUI);
 		//exitController.log("Welcome for testing");
-		exitController.carEventDetected("Exit Car 2", true);
+		exitController.carEventDetected("Exit Car 2", false);
 		//exitController.setState(null);
 	}
 
