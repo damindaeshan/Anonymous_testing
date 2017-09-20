@@ -140,7 +140,8 @@ public class EntryController
 		//newState = STATE.VALIDATED;
 		//newState = STATE.ISSUED;
 		//newState = STATE.TAKEN;
-		newState = STATE.ENTERING;
+		//newState = STATE.ENTERING;
+		newState = STATE.ENTERED;
 		switch (newState) {
 		
 		case BLOCKED: 
