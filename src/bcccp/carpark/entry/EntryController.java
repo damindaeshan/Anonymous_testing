@@ -289,7 +289,7 @@ public class EntryController
 	
 	@Override
 	public void ticketInserted(String barcode) {
-		state_ = STATE.WAITING;
+		//state_ = STATE.WAITING;
 		if (state_ == STATE.WAITING) {
 			try {
 				if (carpark.isSeasonTicketValid(barcode) &&
