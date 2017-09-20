@@ -28,7 +28,8 @@ public class EntryControllerTest {
 		//controller.carEventDetected("CAR1", true);
 		//controller.buttonPushed();
 		//controller.ticketInserted("bar1");
-		controller.ticketTaken();
+		//controller.ticketTaken();
+		controller.notifyCarparkEvent();
 	}
 	
 	
