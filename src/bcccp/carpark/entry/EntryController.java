@@ -136,7 +136,8 @@ public class EntryController
 		//newState = STATE.IDLE;
 		//newState = STATE.BLOCKED;
 		//newState = STATE.WAITING;
-		newState = STATE.FULL;
+		//newState = STATE.FULL;
+		newState = STATE.VALIDATED;
 		switch (newState) {
 		
 		case BLOCKED: 
