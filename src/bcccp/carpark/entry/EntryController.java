@@ -49,7 +49,7 @@ public class EntryController
 		insideEntrySensor_.registerResponder(this);
 		ui.registerController(this);
 		
-		setState(STATE.IDLE);
+		setState(STATE.ISSUED);
 		
 	}
 
