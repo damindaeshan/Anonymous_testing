@@ -320,6 +320,7 @@ public class EntryController
 	
 	@Override
 	public void ticketTaken() {
+		state_ = STATE.VALIDATED;
 		if (state_ == STATE.ISSUED || state_ == STATE.VALIDATED ) {
 			setState(STATE.TAKEN);
 		}
