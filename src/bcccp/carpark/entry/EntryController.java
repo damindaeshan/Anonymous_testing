@@ -50,7 +50,8 @@ public class EntryController
 		ui.registerController(this);
 		
 		//setState(STATE.ISSUED);
-		setState(STATE.ENTERED);
+		//setState(STATE.ENTERED);
+		setState(STATE.ENTERING);
 		
 	}
 
