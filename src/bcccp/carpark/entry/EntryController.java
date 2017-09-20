@@ -260,7 +260,7 @@ public class EntryController
 	
 	@Override
 	public void buttonPushed() {
-		state_ = STATE.WAITING;
+		//state_ = STATE.WAITING;
 		if (state_ == STATE.WAITING) {
 			if (!carpark.isFull()) {
 				adhocTicket = carpark.issueAdhocTicket();
@@ -289,6 +289,7 @@ public class EntryController
 	
 	@Override
 	public void ticketInserted(String barcode) {
+		state_ = STATE.WAITING;
 		if (state_ == STATE.WAITING) {
 			try {
 				if (carpark.isSeasonTicketValid(barcode) &&
