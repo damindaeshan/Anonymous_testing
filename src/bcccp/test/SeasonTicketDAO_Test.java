@@ -14,7 +14,9 @@ public class SeasonTicketDAO_Test {
 		SeasonTicketDAO SeaDAO = new SeasonTicketDAO(factory);
 		SeasonTicket ticket = new SeasonTicket("TIK001", "CAR_001", 12343344, 1234565);
 		SeaDAO.registerTicket(ticket);
-		SeaDAO.recordTicketEntry("TIK001"); 
+		System.out.println(SeaDAO.findTicketById("TIK001"));
 		//Ticket Registered
+		//Carpark    : CAR_001
+		//Ticket No  : TIK001
 	}
 }
