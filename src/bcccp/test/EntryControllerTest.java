@@ -12,8 +12,8 @@ public class EntryControllerTest {
 	public static void main(String[] args){
 		
 		EntryController entryController = new EntryController();
-		//entryController.carEventDetected("asas", true);
-		entryController.setState(null);
+		entryController.carEventDetected("CAR1", true);
+		//entryController.setState(null);
 	}
 	
 	

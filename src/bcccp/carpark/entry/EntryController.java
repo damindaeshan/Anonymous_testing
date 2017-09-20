@@ -70,7 +70,7 @@ public class EntryController
 		switch (state_) {
 		
 		case BLOCKED: 
-			if (detectorId.equals("sdsdsd") && !carDetected) {
+			if (detectorId.equals("CAR1") && !carDetected) {
 				setState(prevState_);
 			}
 			break;
