@@ -49,7 +49,8 @@ public class EntryController
 		insideEntrySensor_.registerResponder(this);
 		ui.registerController(this);
 		
-		setState(STATE.ISSUED);
+		//setState(STATE.ISSUED);
+		setState(STATE.ENTERED);
 		
 	}
 
