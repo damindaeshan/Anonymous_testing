@@ -51,7 +51,7 @@ public class ExitController
 
 	
 	
-	private void log(String message) {
+	public void log(String message) {
 		System.out.println("ExitController : " + message);
 	}
 
@@ -60,6 +60,7 @@ public class ExitController
 	@Override
 	public void carEventDetected(String detectorId, boolean carDetected) {
 
+		state = STATE.BLOCKED;
 		log("carEventDetected: " + detectorId + ", car Detected: " + carDetected );
 		
 		switch (state) {

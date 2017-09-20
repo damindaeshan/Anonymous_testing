@@ -27,7 +27,8 @@ public class ExitControllerTest {
 		ExitUI exitUI = new ExitUI(2, 3);
 
 		ExitController exitController = new ExitController(carpark, exitGate, is, os, exitUI);
-		exitController.log("Welcome for testing");
+		//exitController.log("Welcome for testing");
+		exitController.carEventDetected("Exit Car 2", true);
 	}
 
 }
