@@ -10,13 +10,11 @@ public class SeasonTicketDAO_Test {
 		
 		UsageRecordFactory factory = new UsageRecordFactory();
 		
-		
 		SeasonTicketDAO SeaDAO = new SeasonTicketDAO(factory);
 		SeasonTicket ticket = new SeasonTicket("TIK001", "CAR_001", 12343344, 1234565);
 		SeaDAO.registerTicket(ticket);
-		System.out.println(SeaDAO.findTicketById("TIK001"));
+		SeaDAO.recordTicketEntry("TIK001");
 		//Ticket Registered
-		//Carpark    : CAR_001
-		//Ticket No  : TIK001
+		//Ticket entry recorded 
 	}
 }
