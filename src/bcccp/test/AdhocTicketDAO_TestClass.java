@@ -32,4 +32,7 @@ public class AdhocTicketDAO_TestClass  {
         }else{
             System.out.println("CarparkID test is Failed");
         }
+
+//Find ticket from the barcode ID
+        iAdhocTicket = adhocTicketDAO.findTicketByBarcode(iAdhocTicket.getBarcode());
 }
