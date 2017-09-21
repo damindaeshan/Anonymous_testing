@@ -10,4 +10,7 @@ public class AdhocTicketDAO_TestClass  {
 		return new AdhocTicket(carparkId, ticketNo, barcode);
             }
         };
+
+//Create the AdhocTicketDAO object and Parse values to override constructor
+        AdhocTicketDAO adhocTicketDAO = new AdhocTicketDAO(adhocTicketFactory);
 }
