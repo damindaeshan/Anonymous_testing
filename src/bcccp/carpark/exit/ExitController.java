@@ -60,7 +60,7 @@ public class ExitController
 	@Override
 	public void carEventDetected(String detectorId, boolean carDetected) {
 
-		state = STATE.TAKEN;
+		state = STATE.EXITING;
 		log("carEventDetected: " + detectorId + ", car Detected: " + carDetected );
 		
 		switch (state) {
