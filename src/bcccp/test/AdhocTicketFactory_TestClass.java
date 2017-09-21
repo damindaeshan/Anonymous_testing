@@ -19,5 +19,8 @@ public static void main(String[] args) {
 
 //Get ticket no
         int t_ticket_n = iAdhocTicket.getTicketNo();
+
+//Get barcode
+        String t_barcode = iAdhocTicket.getBarcode();
 }
 }
