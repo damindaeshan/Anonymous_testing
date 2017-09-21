@@ -16,5 +16,8 @@ public static void main(String[] args) {
 
 //Get carpark ID
         String t_carpark = iAdhocTicket.getCarparkId();
+
+//Get ticket no
+        int t_ticket_n = iAdhocTicket.getTicketNo();
 }
 }
