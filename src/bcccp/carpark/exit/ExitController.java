@@ -132,7 +132,8 @@ public class ExitController
 		//newState = STATE.BLOCKED;
 		//newState = STATE.WAITING;
 		//newState = STATE.IDLE;
-		newState = STATE.PROCESSED;
+		//newState = STATE.PROCESSED;
+		newState = STATE.REJECTED;
 		switch (newState) {
 		
 		case BLOCKED: 
