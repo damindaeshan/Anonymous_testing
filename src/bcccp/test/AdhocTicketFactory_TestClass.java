@@ -36,5 +36,12 @@ public static void main(String[] args) {
         }else{
             System.out.println("Ticket no test is Failed");
         }
+
+ //Check barcode
+        if(t_barcode.equals("Af4afa")){
+            System.out.println("Barcode test is Passed");
+        }else{
+            System.out.println("Barcode test is Failed");
+        }
 }
 }
