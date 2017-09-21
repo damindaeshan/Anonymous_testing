@@ -131,7 +131,8 @@ public class ExitController
 	public void setState(STATE newState) {
 		//newState = STATE.BLOCKED;
 		//newState = STATE.WAITING;
-		newState = STATE.IDLE;
+		//newState = STATE.IDLE;
+		newState = STATE.PROCESSED;
 		switch (newState) {
 		
 		case BLOCKED: 
