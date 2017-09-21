@@ -288,7 +288,7 @@ public class ExitController
 	
 	@Override
 	public void ticketTaken() {
-		state = STATE.PROCESSED;
+		state = STATE.REJECTED;
 		if (state == STATE.PROCESSED)  {
 			exitGate.raise();
 			setState(STATE.TAKEN);
