@@ -30,8 +30,8 @@ public class ExitControllerTest {
 		//exitController.log("Welcome for testing");
 		//exitController.carEventDetected("Exit Car 2", false);
 		//exitController.ticketInserted("Ticket1");
-		//exitController.setState(null);
-		exitController.ticketTaken();
+		exitController.setState(null);
+		//exitController.ticketTaken();
 	}
 
 }
