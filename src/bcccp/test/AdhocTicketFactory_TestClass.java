@@ -13,5 +13,8 @@ public static void main(String[] args) {
 
 //Get assigned valued from make method and assign to IAdhocTicket instance
         IAdhocTicket iAdhocTicket = adhocTicketFactory.make(carparkId, ticket_no);
+
+//Get carpark ID
+        String t_carpark = iAdhocTicket.getCarparkId();
 }
 }
