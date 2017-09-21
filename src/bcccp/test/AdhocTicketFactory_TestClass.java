@@ -29,5 +29,12 @@ public static void main(String[] args) {
         }else{
             System.out.println("CarparkID test is Failed");
         }
+
+//Check ticket no
+        if(t_ticket_n==1002234){
+            System.out.println("Ticket no test is Passed");
+        }else{
+            System.out.println("Ticket no test is Failed");
+        }
 }
 }
