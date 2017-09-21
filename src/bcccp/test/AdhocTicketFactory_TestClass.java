@@ -10,5 +10,8 @@ public static void main(String[] args) {
 
 //Assign ticket no
         int ticket_no = 1002234;
+
+//Get assigned valued from make method and assign to IAdhocTicket instance
+        IAdhocTicket iAdhocTicket = adhocTicketFactory.make(carparkId, ticket_no);
 }
 }
