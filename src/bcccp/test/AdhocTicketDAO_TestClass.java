@@ -35,4 +35,11 @@ public class AdhocTicketDAO_TestClass  {
 
 //Find ticket from the barcode ID
         iAdhocTicket = adhocTicketDAO.findTicketByBarcode(iAdhocTicket.getBarcode());
+
+//Check barcode
+        if(iAdhocTicket.getBarcode().equals("A1")){
+            System.out.println("Barcode test is Passed");
+        }else{
+            System.out.println("Barcode test is Failed");
+        }
 }
