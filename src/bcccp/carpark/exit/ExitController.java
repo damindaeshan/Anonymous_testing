@@ -60,7 +60,7 @@ public class ExitController
 	@Override
 	public void carEventDetected(String detectorId, boolean carDetected) {
 
-		state = STATE.EXITED;
+		//state = STATE.EXITED;
 		log("carEventDetected: " + detectorId + ", car Detected: " + carDetected );
 		
 		switch (state) {
@@ -251,9 +251,11 @@ public class ExitController
 	
 	@Override
 	public void ticketInserted(String ticketStr) {
+		state = STATE.EXITED;
 		if (state == STATE.WAITING) {
 			if (isAdhocTicket(ticketStr)) {
 				adhocTicket = carpark.getAdhocTicket(ticketStr);
+				System.out.println(adhocTicket);
 				exitTime = System.currentTimeMillis();
 				if (adhocTicket != null && adhocTicket.isPaid()) {
 					setState(STATE.PROCESSED);
