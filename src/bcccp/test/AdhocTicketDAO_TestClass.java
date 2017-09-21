@@ -13,4 +13,7 @@ public class AdhocTicketDAO_TestClass  {
 
 //Create the AdhocTicketDAO object and Parse values to override constructor
         AdhocTicketDAO adhocTicketDAO = new AdhocTicketDAO(adhocTicketFactory);
+
+//Assign Carpark ID
+        String carparkId = "Level1_Car002";
 }
