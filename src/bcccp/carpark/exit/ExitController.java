@@ -251,11 +251,11 @@ public class ExitController
 	
 	@Override
 	public void ticketInserted(String ticketStr) {
-		state = STATE.EXITED;
+		//state = STATE.EXITED;
 		if (state == STATE.WAITING) {
 			if (isAdhocTicket(ticketStr)) {
 				adhocTicket = carpark.getAdhocTicket(ticketStr);
-				System.out.println(adhocTicket);
+				//System.out.println(adhocTicket);
 				exitTime = System.currentTimeMillis();
 				if (adhocTicket != null && adhocTicket.isPaid()) {
 					setState(STATE.PROCESSED);
@@ -288,6 +288,7 @@ public class ExitController
 	
 	@Override
 	public void ticketTaken() {
+		state = STATE.PROCESSED;
 		if (state == STATE.PROCESSED)  {
 			exitGate.raise();
 			setState(STATE.TAKEN);
