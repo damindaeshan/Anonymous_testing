@@ -42,4 +42,10 @@ public class AdhocTicketDAO_TestClass  {
         }else{
             System.out.println("Barcode test is Failed");
         }
+
+//Get all current tickets
+        List<IAdhocTicket> list = adhocTicketDAO.getCurrentTickets();
+        for (IAdhocTicket iAdhocTicket1 : list) {
+            System.out.println(iAdhocTicket.getTicketNo());
+        }
 }
