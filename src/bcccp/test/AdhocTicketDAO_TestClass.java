@@ -16,4 +16,7 @@ public class AdhocTicketDAO_TestClass  {
 
 //Assign Carpark ID
         String carparkId = "Level1_Car002";
+
+//Assign ticket no
+        int ticket_no = 1002234;
 }
