@@ -22,4 +22,7 @@ public class AdhocTicketDAO_TestClass  {
 
 //Get assigned valued from make method and assign to IAdhocTicket instance
         IAdhocTicket iAdhocTicket = adhocTicketFactory.make(carparkId, ticket_no);
+
+//Create ticket
+        iAdhocTicket = adhocTicketDAO.createTicket(carparkId);
 }
