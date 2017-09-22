@@ -98,4 +98,11 @@ public class AdhocTicket_TestClass {
         }else{
             System.out.println("toString() method is failed");
         }
+
+//Check hasExit
+        if(true==adhocTicket.hasExited()){
+            System.out.println("hasExit() is passed");
+        }else{
+            System.out.println("hasExit() is failed");
+        }
 }
