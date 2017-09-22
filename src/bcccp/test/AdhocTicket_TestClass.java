@@ -46,6 +46,16 @@ public class AdhocTicket_TestClass {
             System.out.println("CarparkID test is Failed");
         }
         
+        /*
+			Test Ticket
+
+			Input 1: 34456
+			Expected Result : Ticket NO test is Passed
+			Actual Result : Ticket NO test is Passed
+			
+			
+			
+		*/
         if (34456 == adhocTicket.getTicketNo()) {
             System.out.println("TicketNo test is Passed");
         } else {
