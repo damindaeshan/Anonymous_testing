@@ -24,7 +24,20 @@ public static void main(String[] args) {
         String t_barcode = iAdhocTicket.getBarcode();
 
 //Check carpark id
-        if(t_carpark.equals("Level1_Car002")){
+/*
+Integration Test 1 : AdhocTicketFactory
+
+Test Carpark ID
+
+Input 1: Level1_Car002
+Expected Result : CarparkID test is Passed
+Actual Result : CarparkID test is Passed
+
+Input 2: Level1_Car003
+Expected Result : CarparkID test is Failed
+Actual Result : CarparkID test is Failed
+*/
+        if(t_carpark.equals("Level1_Car003")){
             System.out.println("CarparkID test is Passed");
         }else{
             System.out.println("CarparkID test is Failed");
