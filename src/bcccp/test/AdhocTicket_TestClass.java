@@ -149,6 +149,16 @@ public class AdhocTicket_TestClass {
         }
 
 //Check charge
+/*
+			Test charge
+
+			Input 1: 50.25f
+			Expected Result : charge test is Passed
+			Actual Result : charge test is Passed
+			
+			
+			
+		*/
         if (charge == adhocTicket.getCharge()) {
             System.out.println("Charge is passed");
         } else {
