@@ -64,4 +64,8 @@ public class AdhocTicket_TestClass {
         } else {
             System.out.println("Charge is failed");
         }
+
+//Check exit Date time
+        long exitDateTime = System.currentTimeMillis();
+        adhocTicket.exit(exitDateTime);
 }
