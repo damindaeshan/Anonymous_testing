@@ -59,6 +59,18 @@ Actual Result : CarparkID test is Passed
         iAdhocTicket = adhocTicketDAO.findTicketByBarcode(iAdhocTicket.getBarcode());
 
 //Check barcode
+/*
+Test Barcode
+
+Input 1: A1
+Expected Result : CarparkID test is Passed
+Actual Result : CarparkID test is Passed
+
+
+
+
+
+*/
         if(iAdhocTicket.getBarcode().equals("A1")){
             System.out.println("Barcode test is Passed");
         }else{
