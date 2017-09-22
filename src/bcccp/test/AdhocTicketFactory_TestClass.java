@@ -80,8 +80,12 @@ Actual Result : Barcode test is Passed
 Input 2: Af4afa23
 Expected Result : Barcode test is Failed
 Actual Result : Barcode test is Failed
+
+Input 3: Af4afa234
+Expected Result : Barcode test is Failed
+Actual Result : Barcode test is Failed
 */
-        if(t_barcode.equals("Af4afa")){
+        if(t_barcode.equals("Af4afa234")){
             System.out.println("Barcode test is Passed");
         }else{
             System.out.println("Barcode test is Failed");
