@@ -70,12 +70,16 @@ Input 2: A2
 Expected Result : CarparkID test is Failed
 Actual Result : CarparkID test is Failed
 
+Input 2: A3
+Expected Result : CarparkID test is Failed
+Actual Result : CarparkID test is Failed
+
 
 
 
 
 */
-        if(iAdhocTicket.getBarcode().equals("A2")){
+        if(iAdhocTicket.getBarcode().equals("A3")){
             System.out.println("Barcode test is Passed");
         }else{
             System.out.println("Barcode test is Failed");
