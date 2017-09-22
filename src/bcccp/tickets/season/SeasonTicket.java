@@ -98,6 +98,9 @@ public class SeasonTicket implements ISeasonTicket {
 		}
 		return builder.toString();
 	}
+	//Carpark    : LEFD-001
+	//Ticket No  : TIK001
+	//Usage : startDateTime : 1220227200,
 
 
 }
