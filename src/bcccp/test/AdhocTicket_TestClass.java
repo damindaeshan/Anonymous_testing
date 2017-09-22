@@ -16,7 +16,7 @@ public class AdhocTicket_TestClass {
     	/*
     		
     	*/
-        AdhocTicket adhocTicket = new AdhocTicket("Level_1_005", 344567588, "LV1_002_34456_14:42_18Sept");
+        AdhocTicket adhocTicket = new AdhocTicket("Level_1_005", 344567588, "LV1_003_34456_14:42_18Sept");
         System.out.println("AdhocTicket constructor is executed");
 
 
@@ -81,10 +81,13 @@ public class AdhocTicket_TestClass {
 			Expected Result : Barcode test is Passed
 			Actual Result : Barcode test is Passed
 			
+			Input 2: LV1_003_34456_14:42_18Sept
+			Expected Result : Barcode test is Passed
+			Actual Result : Barcode test is Passed
 			
 		*/
         
-        if ("LV1_002_34456_14:42_18Sept".equals(adhocTicket.getBarcode())) {
+        if ("LV1_003_34456_14:42_18Sept".equals(adhocTicket.getBarcode())) {
             System.out.println("Barcode test is Passed");
         } else {
             System.out.println("Barcode test is Failed");
