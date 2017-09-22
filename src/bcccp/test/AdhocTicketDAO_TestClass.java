@@ -27,6 +27,16 @@ public class AdhocTicketDAO_TestClass  {
         iAdhocTicket = adhocTicketDAO.createTicket(carparkId);
 
 //Check carpark id
+/*
+Integration Test 4 : AdhocTicketDAO
+
+Test Carpark ID
+
+Input 1: Level1_Car002
+Expected Result : CarparkID test is Passed
+Actual Result : CarparkID test is Passed
+
+*/
         if(iAdhocTicket.getCarparkId().equals("Level1_Car002")){
             System.out.println("CarparkID test is Passed");
         }else{
