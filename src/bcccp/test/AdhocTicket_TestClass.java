@@ -75,4 +75,9 @@ public class AdhocTicket_TestClass {
         } else {
             System.out.println("Exit Date Time is failed");
         }
+
+//Set Date
+        Date entryDate = new Date(entryDateTime);
+        Date paidDate = new Date(payDateTime);
+        Date exitDate = new Date(exitDateTime);
 }
