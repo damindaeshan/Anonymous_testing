@@ -44,6 +44,19 @@ Actual Result : CarparkID test is Failed
         }
 
 //Check ticket no
+/*
+Integration Test 2 : AdhocTicketFactory
+
+Test Ticket No
+
+Input 1: 1002234
+Expected Result : Ticket No test is Passed
+Actual Result : Ticket No test is Passed
+
+Input 2: 1002235
+Expected Result : Ticket No test is Failed
+Actual Result : Ticket No test is Failed
+*/
         if(t_ticket_n==1002234){
             System.out.println("Ticket no test is Passed");
         }else{
