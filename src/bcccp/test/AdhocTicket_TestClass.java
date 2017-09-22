@@ -57,10 +57,14 @@ public class AdhocTicket_TestClass {
 			Expected Result : Ticket NO test is Failed
 			Actual Result : Ticket NO test is Failed
 			
+			Input 3: 3445675
+			Expected Result : Ticket NO test is Failed
+			Actual Result : Ticket NO test is Failed
+			
 			
 			
 		*/
-        if (344567 == adhocTicket.getTicketNo()) {
+        if (3445675 == adhocTicket.getTicketNo()) {
             System.out.println("TicketNo test is Passed");
         } else {
             System.out.println("TicketNo test is Failed");
