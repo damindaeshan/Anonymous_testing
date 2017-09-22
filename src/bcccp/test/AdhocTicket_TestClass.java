@@ -1,6 +1,12 @@
 package bcccp.test;
 
 public class AdhocTicket_TestClass {
+
+//Define state
+    private static STATE state_;
+    private static enum STATE {
+        ISSUED, CURRENT, PAID, EXITED
+    }
 	
 	public static void main(String[] args) {
         testAdhockTicketConstructor();
