@@ -101,10 +101,23 @@ public class AdhocTicket_TestClass {
             System.out.println("Barcode test is Failed");
         }
 //Set entry date Time
+
+
         long entryDateTime = System.currentTimeMillis();
         adhocTicket.enter(entryDateTime);
 
 //Check entry date time
+		/*
+			Test entryDateTime
+
+			Input 1: entryDateTime
+			Expected Result : entryDateTime test is Passed
+			Actual Result : entryDateTime test is Passed
+			
+			
+			
+		*/
+
         if (entryDateTime == adhocTicket.getEntryDateTime()) {
             System.out.println("Entry Date Time is passed");
         } else {
