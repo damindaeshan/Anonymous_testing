@@ -15,7 +15,7 @@ public class AdhocTicketDAO_TestClass  {
         AdhocTicketDAO adhocTicketDAO = new AdhocTicketDAO(adhocTicketFactory);
 
 //Assign Carpark ID
-        String carparkId = "Level1_Car002";
+        String carparkId = "Level1_Car006";
 
 //Assign ticket no
         int ticket_no = 1002234;
@@ -42,10 +42,14 @@ Input 3: Level1_Car004
 Expected Result : CarparkID test is Failed
 Actual Result : CarparkID test is Failed
 
+Input 4: Level1_Car006
+Expected Result : CarparkID test is Passed
+Actual Result : CarparkID test is Passed
+
 
 
 */
-        if(iAdhocTicket.getCarparkId().equals("Level1_Car004")){
+        if(iAdhocTicket.getCarparkId().equals("Level1_Car006")){
             System.out.println("CarparkID test is Passed");
         }else{
             System.out.println("CarparkID test is Failed");
