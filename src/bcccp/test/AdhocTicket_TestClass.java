@@ -105,4 +105,11 @@ public class AdhocTicket_TestClass {
         }else{
             System.out.println("hasExit() is failed");
         }
+
+ //Check isPaid
+        if(false==adhocTicket.isPaid()){
+            System.out.println("isPaid() is passed");
+        }else{
+            System.out.println("isPaid() is failed");
+        }
 }
