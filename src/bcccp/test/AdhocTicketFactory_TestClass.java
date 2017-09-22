@@ -36,8 +36,12 @@ Actual Result : CarparkID test is Passed
 Input 2: Level1_Car003
 Expected Result : CarparkID test is Failed
 Actual Result : CarparkID test is Failed
+
+Input 3: Level1_Car004
+Expected Result : CarparkID test is Failed
+Actual Result : CarparkID test is Failed
 */
-        if(t_carpark.equals("Level1_Car003")){
+        if(t_carpark.equals("Level1_Car004")){
             System.out.println("CarparkID test is Passed");
         }else{
             System.out.println("CarparkID test is Failed");
