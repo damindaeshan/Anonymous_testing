@@ -80,4 +80,7 @@ public class AdhocTicket_TestClass {
         Date entryDate = new Date(entryDateTime);
         Date paidDate = new Date(payDateTime);
         Date exitDate = new Date(exitDateTime);
+
+//Set State
+        state_ = state_.EXITED;
 }
