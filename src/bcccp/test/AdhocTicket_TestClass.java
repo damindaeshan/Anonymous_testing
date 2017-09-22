@@ -242,10 +242,12 @@ public class AdhocTicket_TestClass {
 			Actual Result : hasExit test is Passed
 			
 			
-			
+			Input 2: false
+			Expected Result : hasExit test is Failed
+			Actual Result : hasExit test is Failed
 		*/
 
-        if(true==adhocTicket.hasExited()){
+        if(false==adhocTicket.hasExited()){
             System.out.println("hasExit() is passed");
         }else{
             System.out.println("hasExit() is failed");
