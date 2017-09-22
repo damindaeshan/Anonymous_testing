@@ -19,7 +19,7 @@ public class EntryControllerTest {
 		UsageRecordFactory factory = new UsageRecordFactory();
 		SeasonTicketDAO seasonTicketDAO = new SeasonTicketDAO(factory);
 
-		Carpark carpark = new Carpark("Gulani_CAR", 15, adhocTicketDAO, seasonTicketDAO);
+		Carpark carpark = new Carpark("Car1", 15, adhocTicketDAO, seasonTicketDAO);
 		Gate entryGate = new Gate(1, 2);
 		CarSensor is = new CarSensor("CAR1", 1, 2);
 		CarSensor os = new CarSensor("CAR1", 1, 2);
