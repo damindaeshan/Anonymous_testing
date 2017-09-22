@@ -64,6 +64,19 @@ Actual Result : Ticket No test is Failed
         }
 
  //Check barcode
+ /*
+Integration Test 3 : AdhocTicketFactory
+
+Test Barcode
+
+Input 1: Af4afa
+Expected Result : Barcode test is Passed
+Actual Result : Barcode test is Passed
+
+Input 2: Af4afa23
+Expected Result : Barcode test is Failed
+Actual Result : Barcode test is Failed
+*/
         if(t_barcode.equals("Af4afa")){
             System.out.println("Barcode test is Passed");
         }else{
