@@ -68,4 +68,11 @@ public class AdhocTicket_TestClass {
 //Check exit Date time
         long exitDateTime = System.currentTimeMillis();
         adhocTicket.exit(exitDateTime);
+
+//Check exit date time
+        if (exitDateTime == adhocTicket.getExitDateTime()) {
+            System.out.println("Exit Date Time is passed");
+        } else {
+            System.out.println("Exit Date Time is failed");
+        }
 }
