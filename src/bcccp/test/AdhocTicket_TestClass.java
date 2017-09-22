@@ -31,8 +31,12 @@ public class AdhocTicket_TestClass {
 			Expected Result : CarparkID test is Failed
 			Actual Result : CarparkID test is Failed
 			
+			Input 3: Level1_Car004
+			Expected Result : CarparkID test is Failed
+			Actual Result : CarparkID test is Failed
+			
 		*/
-        if ("Level_1_003".equals(adhocTicket.getCarparkId())) {
+        if ("Level_1_004".equals(adhocTicket.getCarparkId())) {
             System.out.println("CarparkID test is Passed");
         } else {
             System.out.println("CarparkID test is Failed");
