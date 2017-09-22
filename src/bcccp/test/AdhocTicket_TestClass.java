@@ -44,5 +44,10 @@ public class AdhocTicket_TestClass {
             System.out.println("Entry Date Time is failed");
         }
 
+//Set pay
+        long payDateTime = System.currentTimeMillis();
+        float charge = 50.25f;
+        adhocTicket.pay(payDateTime, charge);
+
     }
 }
