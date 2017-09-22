@@ -56,8 +56,12 @@ Actual Result : Ticket No test is Passed
 Input 2: 1002235
 Expected Result : Ticket No test is Failed
 Actual Result : Ticket No test is Failed
+
+Input 3: 1002236
+Expected Result : Ticket No test is Failed
+Actual Result : Ticket No test is Failed
 */
-        if(t_ticket_n==1002234){
+        if(t_ticket_n==1002236){
             System.out.println("Ticket no test is Passed");
         }else{
             System.out.println("Ticket no test is Failed");
