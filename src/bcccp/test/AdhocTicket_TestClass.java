@@ -126,7 +126,7 @@ public class AdhocTicket_TestClass {
 
 //Set pay
         long payDateTime = System.currentTimeMillis();
-        float charge = 50.25f;
+        float charge = 50.25;
         adhocTicket.pay(payDateTime, charge);
 
     }
@@ -155,6 +155,10 @@ public class AdhocTicket_TestClass {
 			Input 1: 50.25f
 			Expected Result : charge test is Passed
 			Actual Result : charge test is Passed
+			
+			Input 2: 50.25
+			Expected Result : charge test is Failed
+			Actual Result : charge test is Failed
 			
 			
 			
