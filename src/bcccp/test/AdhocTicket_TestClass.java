@@ -178,6 +178,16 @@ public class AdhocTicket_TestClass {
         adhocTicket.exit(exitDateTime);
 
 //Check exit date time
+/*
+			Test exitDateTime
+
+			Input 1: exitDateTime
+			Expected Result : exitDateTime test is Passed
+			Actual Result : exitDateTime test is Passed
+			
+			
+			
+		*/
         if (exitDateTime == adhocTicket.getExitDateTime()) {
             System.out.println("Exit Date Time is passed");
         } else {
