@@ -63,16 +63,20 @@ Actual Result : CarparkID test is Passed
 Test Barcode
 
 Input 1: A1
-Expected Result : CarparkID test is Passed
-Actual Result : CarparkID test is Passed
+Expected Result : Barcode test is Passed
+Actual Result : Barcode test is Passed
 
 Input 2: A2
-Expected Result : CarparkID test is Failed
-Actual Result : CarparkID test is Failed
+Expected Result : Barcode test is Failed
+Actual Result : Barcode test is Failed
 
-Input 2: A3
-Expected Result : CarparkID test is Failed
-Actual Result : CarparkID test is Failed
+Input 3: A3
+Expected Result : Barcode test is Failed
+Actual Result : Barcode test is Failed
+
+Input 4: A3
+Expected Result : Barcode test is Failed
+Actual Result : Barcode test is Failed
 
 
 
