@@ -132,6 +132,16 @@ public class AdhocTicket_TestClass {
     }
 
 //Check Paid Date time
+/*
+			Test payDateTime
+
+			Input 1: payDateTime
+			Expected Result : payDateTime test is Passed
+			Actual Result : payDateTime test is Passed
+			
+			
+			
+		*/
         if (payDateTime == adhocTicket.getPaidDateTime()) {
             System.out.println("Paid Date Time is passed");
         } else {
