@@ -92,4 +92,10 @@ public class AdhocTicket_TestClass {
                 + "Exit Time  : " + exitDate + "\n"
                 + "State      : " + state_ + "\n"
                 + "Barcode    : " + barcode;
+
+ if(check.equals(adhocTicket.toString())){
+            System.out.println("toString() method is passed");
+        }else{
+            System.out.println("toString() method is failed");
+        }
 }
