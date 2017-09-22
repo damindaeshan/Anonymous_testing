@@ -261,9 +261,13 @@ public class AdhocTicket_TestClass {
 			Expected Result : isPaid test is Passed
 			Actual Result : isPaid test is Passed
 			
+			Input 2: true
+			Expected Result : isPaid test is Failed
+			Actual Result : isPaid test is Failed
+			
 			
 		*/
-        if(false==adhocTicket.isPaid()){
+        if(true==adhocTicket.isPaid()){
             System.out.println("isPaid() is passed");
         }else{
             System.out.println("isPaid() is failed");
