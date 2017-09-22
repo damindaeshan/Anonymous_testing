@@ -112,4 +112,7 @@ public class AdhocTicket_TestClass {
         }else{
             System.out.println("isPaid() is failed");
         }
+
+//Check exit
+        adhocTicket.exit(exitDateTime);
 }
