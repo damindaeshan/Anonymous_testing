@@ -31,7 +31,7 @@ public class ExitControllerTest {
 		//exitController.carEventDetected("Exit Car 2", false);
 		//exitController.ticketInserted("Ticket1");
 		//exitController.setState(null);
-		//exitController.ticketTaken();
+		exitController.ticketTaken();
 		if ("111".equals(is.getId()) && !true) {
 			System.out.println("States is IDLE");
 		}
