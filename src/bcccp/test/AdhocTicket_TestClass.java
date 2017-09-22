@@ -50,4 +50,11 @@ public class AdhocTicket_TestClass {
         adhocTicket.pay(payDateTime, charge);
 
     }
+
+//Check Paid Date time
+        if (payDateTime == adhocTicket.getPaidDateTime()) {
+            System.out.println("Paid Date Time is passed");
+        } else {
+            System.out.println("Paid Date Time is failed");
+        }
 }
