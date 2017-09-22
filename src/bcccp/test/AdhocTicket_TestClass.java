@@ -203,6 +203,22 @@ public class AdhocTicket_TestClass {
         state_ = state_.EXITED;
 
 //Check toString() method
+/*
+			Test toString
+
+			Input 1: Carpark    : " + carparkId_ + "\n"
+                + "Ticket No  : " + ticketNo_ + "\n"
+                + "Entry Time : " + entryDate + "\n"
+                + "Paid Time  : " + paidDate + "\n"
+                + "Exit Time  : " + exitDate + "\n"
+                + "State      : " + state_ + "\n"
+                + "Barcode    : " + barcode
+			Expected Result : toString test is Passed
+			Actual Result : toString test is Passed
+			
+			
+			
+		*/
         String check = "Carpark    : " + carparkId_ + "\n"
                 + "Ticket No  : " + ticketNo_ + "\n"
                 + "Entry Time : " + entryDate + "\n"
