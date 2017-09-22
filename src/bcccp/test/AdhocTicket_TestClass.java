@@ -37,5 +37,12 @@ public class AdhocTicket_TestClass {
         long entryDateTime = System.currentTimeMillis();
         adhocTicket.enter(entryDateTime);
 
+//Check entry date time
+        if (entryDateTime == adhocTicket.getEntryDateTime()) {
+            System.out.println("Entry Date Time is passed");
+        } else {
+            System.out.println("Entry Date Time is failed");
+        }
+
     }
 }
