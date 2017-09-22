@@ -33,5 +33,9 @@ public class AdhocTicket_TestClass {
         } else {
             System.out.println("Barcode test is Failed");
         }
+//Set entry date Time
+        long entryDateTime = System.currentTimeMillis();
+        adhocTicket.enter(entryDateTime);
+
     }
 }
