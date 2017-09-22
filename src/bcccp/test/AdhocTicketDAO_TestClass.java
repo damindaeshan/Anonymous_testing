@@ -15,7 +15,7 @@ public class AdhocTicketDAO_TestClass  {
         AdhocTicketDAO adhocTicketDAO = new AdhocTicketDAO(adhocTicketFactory);
 
 //Assign Carpark ID
-        String carparkId = "Level1_Car002";
+        String carparkId = "Level1_Car006";
 
 //Assign ticket no
         int ticket_no = 1002234;
@@ -38,10 +38,25 @@ Input 2: Level1_Car003
 Expected Result : CarparkID test is Failed
 Actual Result : CarparkID test is Failed
 
+<<<<<<< HEAD
 
 
 */
         if(iAdhocTicket.getCarparkId().equals("Level1_Car003")){
+=======
+Input 3: Level1_Car004
+Expected Result : CarparkID test is Failed
+Actual Result : CarparkID test is Failed
+
+Input 4: Level1_Car006
+Expected Result : CarparkID test is Passed
+Actual Result : CarparkID test is Passed
+
+
+
+*/
+        if(iAdhocTicket.getCarparkId().equals("Level1_Car006")){
+>>>>>>> Pradeep1
             System.out.println("CarparkID test is Passed");
         }else{
             System.out.println("CarparkID test is Failed");
@@ -51,7 +66,31 @@ Actual Result : CarparkID test is Failed
         iAdhocTicket = adhocTicketDAO.findTicketByBarcode(iAdhocTicket.getBarcode());
 
 //Check barcode
-        if(iAdhocTicket.getBarcode().equals("A1")){
+/*
+Test Barcode
+
+Input 1: A1
+Expected Result : Barcode test is Passed
+Actual Result : Barcode test is Passed
+
+Input 2: A2
+Expected Result : Barcode test is Failed
+Actual Result : Barcode test is Failed
+
+Input 3: A3
+Expected Result : Barcode test is Failed
+Actual Result : Barcode test is Failed
+
+Input 4: A3
+Expected Result : Barcode test is Failed
+Actual Result : Barcode test is Failed
+
+
+
+
+
+*/
+        if(iAdhocTicket.getBarcode().equals("A3")){
             System.out.println("Barcode test is Passed");
         }else{
             System.out.println("Barcode test is Failed");
