@@ -27,11 +27,17 @@ public class ExitControllerTest {
 		ExitUI exitUI = new ExitUI(2, 3);
 
 		ExitController exitController = new ExitController(carpark, exitGate, is, os, exitUI);
-		//exitController.log("Welcome for testing");
+		exitController.log("Welcome for testing Exiting log");
 		//exitController.carEventDetected("Exit Car 2", false);
 		//exitController.ticketInserted("Ticket1");
-		exitController.setState(null);
+		//exitController.setState(null);
 		//exitController.ticketTaken();
+		if ("Exit Car 2".equals(is.getId()) && !true) {
+			System.out.println("States is IDLE");
+		}
+		else if ("Exit Car 2".equals(os.getId()) && true) {
+			System.out.println("States is EXITING");
+		}
 	}
 
 }
