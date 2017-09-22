@@ -140,8 +140,8 @@ public class EntryController
 		//newState = STATE.BLOCKED;
 		//newState = STATE.WAITING;
 		//newState = STATE.FULL;
-		newState = STATE.VALIDATED;
-		//newState = STATE.ISSUED;
+		//newState = STATE.VALIDATED;
+		newState = STATE.ISSUED;
 		//newState = STATE.TAKEN;
 		//newState = STATE.ENTERING;
 		//newState = STATE.ENTERED;
