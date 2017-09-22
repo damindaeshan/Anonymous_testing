@@ -74,6 +74,16 @@ public class AdhocTicket_TestClass {
             System.out.println("TicketNo test is Failed");
         }
         
+        /*
+			Test Barcode
+
+			Input 1: LV1_002_34456_14:42_18Sept
+			Expected Result : Barcode test is Passed
+			Actual Result : Barcode test is Passed
+			
+			
+		*/
+        
         if ("LV1_002_34456_14:42_18Sept".equals(adhocTicket.getBarcode())) {
             System.out.println("Barcode test is Passed");
         } else {
