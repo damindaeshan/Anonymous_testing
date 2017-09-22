@@ -16,7 +16,7 @@ public class AdhocTicket_TestClass {
     	/*
     		
     	*/
-        AdhocTicket adhocTicket = new AdhocTicket("Level_1_005", 34456, "LV1_002_34456_14:42_18Sept");
+        AdhocTicket adhocTicket = new AdhocTicket("Level_1_005", 344567588, "LV1_002_34456_14:42_18Sept");
         System.out.println("AdhocTicket constructor is executed");
 
 
@@ -61,10 +61,14 @@ public class AdhocTicket_TestClass {
 			Expected Result : Ticket NO test is Failed
 			Actual Result : Ticket NO test is Failed
 			
+			Input 4: 344567588
+			Expected Result : Ticket NO test is Passed
+			Actual Result : Ticket NO test is Passed
+			
 			
 			
 		*/
-        if (3445675 == adhocTicket.getTicketNo()) {
+        if (344567588 == adhocTicket.getTicketNo()) {
             System.out.println("TicketNo test is Passed");
         } else {
             System.out.println("TicketNo test is Failed");
