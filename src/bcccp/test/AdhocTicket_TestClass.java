@@ -13,10 +13,34 @@ public class AdhocTicket_TestClass {
     }
 
     public static void testAdhockTicketConstructor() {
-        AdhocTicket adhocTicket = new AdhocTicket("Level_1_002", 34456, "LV1_002_34456_14:42_18Sept");
+    	/*
+    		
+    	*/
+        AdhocTicket adhocTicket = new AdhocTicket("Level_1_005", 34456, "LV1_002_34456_14:42_18Sept");
         System.out.println("AdhocTicket constructor is executed");
 
-        if ("Level_1_002".equals(adhocTicket.getCarparkId())) {
+
+		/*
+			Test Carpark ID
+
+			Input 1: Level1_Car002
+			Expected Result : CarparkID test is Passed
+			Actual Result : CarparkID test is Passed
+			
+			Input 2: Level1_Car003
+			Expected Result : CarparkID test is Failed
+			Actual Result : CarparkID test is Failed
+			
+			Input 3: Level1_Car004
+			Expected Result : CarparkID test is Failed
+			Actual Result : CarparkID test is Failed
+			
+			Input 4: Level1_Car005
+			Expected Result : CarparkID test is Failed
+			Actual Result : CarparkID test is Failed
+			
+		*/
+        if ("Level_1_005".equals(adhocTicket.getCarparkId())) {
             System.out.println("CarparkID test is Passed");
         } else {
             System.out.println("CarparkID test is Failed");
