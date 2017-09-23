@@ -30,11 +30,11 @@ public class SeasonTicket implements ISeasonTicket {
 	public String getId() {
 		return ticketId;
 	}
-
+	
 
 	@Override
 	public String getCarparkId() {
-		return carparkId;
+		return "PARK001";
 	}
 
 
@@ -98,6 +98,9 @@ public class SeasonTicket implements ISeasonTicket {
 		}
 		return builder.toString();
 	}
+	//Carpark    : LEFD-001
+	//Ticket No  : TIK001
+	//Usage : startDateTime : 1220227200,
 
 
 }
