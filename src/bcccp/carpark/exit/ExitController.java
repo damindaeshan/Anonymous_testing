@@ -46,12 +46,12 @@ public class ExitController
 		ui.registerController(this);
 
 		prevState = STATE.IDLE;		
-		setState(STATE.IDLE);		
+		setState(STATE.IDLE);
 	}
 
 	
 	
-	private void log(String message) {
+	public void log(String message) {
 		System.out.println("ExitController : " + message);
 	}
 
@@ -60,6 +60,7 @@ public class ExitController
 	@Override
 	public void carEventDetected(String detectorId, boolean carDetected) {
 
+		//state = STATE.EXITED;
 		log("carEventDetected: " + detectorId + ", car Detected: " + carDetected );
 		
 		switch (state) {
@@ -127,7 +128,14 @@ public class ExitController
 
 	
 	
-	private void setState(STATE newState) {
+	public void setState(STATE newState) {
+		//newState = STATE.BLOCKED;
+		//newState = STATE.WAITING;
+		//newState = STATE.IDLE;
+		//newState = STATE.PROCESSED;
+		//newState = STATE.REJECTED;
+		//newState = STATE.TAKEN;
+		//newState = STATE.EXITED;
 		switch (newState) {
 		
 		case BLOCKED: 
@@ -248,9 +256,11 @@ public class ExitController
 	
 	@Override
 	public void ticketInserted(String ticketStr) {
+		//state = STATE.EXITED;
 		if (state == STATE.WAITING) {
 			if (isAdhocTicket(ticketStr)) {
 				adhocTicket = carpark.getAdhocTicket(ticketStr);
+				//System.out.println(adhocTicket);
 				exitTime = System.currentTimeMillis();
 				if (adhocTicket != null && adhocTicket.isPaid()) {
 					setState(STATE.PROCESSED);
@@ -283,6 +293,7 @@ public class ExitController
 	
 	@Override
 	public void ticketTaken() {
+		state = STATE.TAKEN;
 		if (state == STATE.PROCESSED)  {
 			exitGate.raise();
 			setState(STATE.TAKEN);
